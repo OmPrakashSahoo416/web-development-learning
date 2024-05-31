@@ -1,0 +1,11 @@
+{
+    "editor.fontFamily": "'Fira Code Retina', 'Courier New', monospace",
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "microsoft-edge",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.cursorBlinking": "smooth",
+    "editor.fontSize": 15,
+    
+    
+}

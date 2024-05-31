@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Classes</title>
+	<link rel="icon" href = "anim.ico">
+<style>
+.state {
+	display:grid;
+	grid-template-columns: 30% 30%;
+	font-family:poppins;
+
+}
+
+.famous {
+	font-size:250%;
+	font-family:poppins;
+
+}
+
+button {
+	font-family:poppins;
+	border: none;
+	background-color:palegreen;
+	padding: 20px 20px 20px 20px;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+</style>
+
+
+</head>
+<body>
+	
+	<h1>HTML Classes</h1><hr>
+	<button onclick="hideElements()">Toggler</button>
+	<div class="state">
+	<div class="country" style="background-color:indianred; padding: 10px 10px 10px 10px;">
+	<h2>India</h2>
+	<p><i>Full of Hope</i></p>
+	<span class="famous">Idli</span>
+	</div>
+
+	<div class="country" style="background-color:mediumaquamarine; padding: 10px 10px 10px 10px;">
+	<h2>Japan</h2>
+	<p><i>Full of Tech</i></p>
+	<span id="idpagecall"class="famous">Ramen</span>
+	</div>
+	</div>
+
+
+	<!--creating a function to hide elements in js-->
+	<script>
+		function hideElements() {
+			var x = document.getElementsByClassName("country");
+			if(x[0].style.display == "none") {
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "block";
+				}
+			}
+			else {
+				for (var i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+			}
+
+
+		}
+
+
+
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

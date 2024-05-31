@@ -1,0 +1,14 @@
+h1 {
+    font-style: oblique;
+    font-size: 50px;
+}
+h2 {
+    font-style: italic;
+    font-weight: bolder;
+}
+p {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family:"Sofia";
+    font-size: 5vw;
+}

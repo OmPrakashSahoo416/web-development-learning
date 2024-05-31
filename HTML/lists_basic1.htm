@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Lists</title>
+	<link rel="icon" href="girl.jpg">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li a {
+	display:block;
+	color:white;
+	text-align:center;
+	padding:16px;
+	text-decoration:none;
+}
+li a:hover {
+  background-color: #FFFFFF;
+  color: #111111;
+}
+</style>
+</head>
+<body>
+	<h1>HTML Lists</h1><hr>
+	<h3>Html document elements:</h3>
+	<ul id = "home">
+	<li>html</li>
+	<li>head</li>
+	<li>body</li>
+	</ul><hr>
+	<h3>Life problems:</h3>
+	<ol>
+	<li>Anxiety</li>
+	<li>Fear</li>
+	<li>Depression</li>
+	</ol><hr>
+	<!--if li is not within any list tag it defaults it as unordered L-->
+	<li>xxx</li><hr>
+	
+	<!--description lists are used to use lists with description-->
+	<dl>
+	<dt>CPU</dt>
+	<dd>Central Processing Unit</dd>
+	<dd>Heart of a computer</dd>
+	</dl><hr>
+
+	<!--unordered lists-->
+	<ul id = "news"style="list-style-type:disc;">
+	<li>Kitchen</li>
+	<li>Bedroom</li>
+	<li>Washroom</li>
+	</ul><hr>
+
+	<ul id="home" style="list-style-type:circle;">
+	<li>Kitchen</li>
+	<li>Bedroom</li>
+	<li>Washroom</li>
+	</ul><hr>	
+
+	<!--nested list items in ul-->
+	<ul id="about" style="list-style-type:circle;">
+	<li>Kitchen</li>
+	<ul style="list-style-type:disc;">
+	<li>Gas Stove</li>
+	<li>Utensils</li>
+	</ul>
+	<li>Bedroom</li>
+	<ul style="list-style-type:square;">
+	<li>Sofa Set</li>
+	<li>Queen Bed</li>
+	</ul>
+	<li>Washroom</li>
+	</ul><hr>
+
+	<ul>
+  	<li><a href="#home">Home</a></li>
+  	<li><a href="#news">News</a></li>
+  	<li><a href="#contact">Contact</a></li>
+  	<li><a href="#about">About</a></li>
+	</ul>
+
+	<!--all about ordered lists-->
+	<ol type="i">
+	<li>Kitchen</li>
+	<ol type="I">
+	<li>Gas Stove</li>
+	<li>Utensils</li>
+	</ol>
+	<li>Bedroom</li>
+	<ol start="43">
+	<li>Sofa Set</li>
+	<li>Queen Bed</li>
+	</ol>
+	<li>Washroom</li>
+	</ol><hr>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

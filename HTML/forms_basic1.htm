@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1><hr>
+    <h1>Hi!</h1><hr>
+
+    <!-- creating a form here  -->
+    <!-- in action we can give the filepath where we want to store the values  -->
+    <form action="forms_basic1.txt">
+        <label for="fname"><b>First Name</b></label><br>
+        <input type="text" id="fname" name="First Name"><br>
+        <hr>
+
+        <label for="lname"><b>Last Name</b></label><br>
+        <input type="text" name="Last Name" id="lname"><br>
+        <hr>
+
+        <p>Sleeping hours</p>
+        <input type="radio" name="Sleeping Hours" id="6 Hours" value="6 Hours">
+        <label for="6 Hours">6 Hours</label><br>
+        <input type="radio" name="Sleeping Hours" id="8 Hours" value="8 Hours">
+        <label for="8 Hours">8 Hours</label><br>
+        <input type="radio" name="Sleeping Hours" id="10 Hours" value="10 Hours">
+        <label for="10 Hours">10 Hours</label><hr>
+
+        <p>When do you take your food ?</p>
+        <input type="checkbox" name="Eating Time" id="Breakfast" value="Breakfast">
+        <label for="Breakfast">Breakfast</label><br>
+        <input type="checkbox" name="Eating Time" id="Lunch" value="Lunch">
+        <label for="Lunch">Lunch</label><br>
+        <input type="checkbox" name="Eating Time" id="Dinner" value="Dinner">
+        <label for="Dinner">Dinner</label><hr>
+
+        <!-- submit button used for submitting a form 
+        and we can use the form handler action attr to store the values -->
+        <input type="submit" value="Submit"><hr>
+
+    </form>
+
+</body>
+</html>

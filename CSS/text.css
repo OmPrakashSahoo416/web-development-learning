@@ -1,0 +1,34 @@
+h1 {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px red, 4px 4px 4px blue;
+}
+
+h2 {
+    padding: 20px;
+    background-color: tomato;
+    color: white;
+    font-family: "Poppins";
+
+    /* text-align to horizontal align the elements */
+    /* text-align-last last line of text align  */
+
+}
+
+p {
+    background-color: burlywood;
+    padding: 50px;
+    text-indent: 30px;
+    margin: auto;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 30px;
+
+}
+
+a {
+    padding: 20px;
+    text-decoration: none;
+    background-color: purple;
+    color: white;
+    text-transform: uppercase;
+}

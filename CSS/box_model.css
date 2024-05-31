@@ -1,0 +1,18 @@
+p {
+    background-color: rgb(172, 169, 0);
+    width: 400px; /* This is the width of content area only. */
+
+    padding: 30px;
+
+
+    /* outside of the padding  */
+    border: 30px solid greenyellow;
+
+    /* space between screen and border  */
+    margin: 200px auto; /* Equal from both sides. */
+
+    /* between margin and outside border  */
+    /* NOT a part of element width  */
+    outline: 30px solid green;
+    outline-offset: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+<body>
+    <h1>Form Attributes</h1><hr>
+    <p>Now I can update the web page in run time</p>
+    <p>Now it will auto save every 1 second</p><hr>
+
+    <!-- create a table 
+    with action attribute to know what action be taken -->
+    <form target="_blank" method="get" autocomplete="off">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="First Name"><hr>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="Email Address"><hr>
+        <label for="gender">Gender</label>
+        <input type="radio" name="Gender" id="gender" value="Male">
+        <label for="gender">Male</label>
+        <input type="radio" name="Gender" id="gender" value="Female">
+        <label for="gender">Female</label>
+        <input type="radio" name="Gender" id="gender" value="Female">
+        <label for="gender">Other</label>
+        <hr>
+        <input type="submit">
+
+
+    </form>
+
+    <!-- target attribute of form can be used to set 
+    the display the response in blank self etc.. places -->
+
+    <!-- method attribute is used to send the data in the url 
+    in get size is limited and values are visible and post 
+    is vice versa -->
+
+    <!-- example preview : 
+    http://127.0.0.1:5500/HTML/form_attr.htm
+    ?First+Name=Ram&Email+Address=ram%40hotmail.com
+    &Gender=Male -->
+
+    <!-- autocomplete helps in automatically completing values  -->
+    <!-- basically gives suggestions based on the input field  -->
+    
+
+</body>
+</html>

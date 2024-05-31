@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DIV</title>
+
+<style>
+
+.countries {
+	width:100%;
+	overflow:auto;
+}
+.countries div {
+	width:33%;
+	float:left;
+}
+
+.countries_2 div {
+	width:33%;
+ 	display: inline-block;
+}
+
+.countries_grid {
+	display:grid;
+	
+	grid-template-columns: 33% 33% 33%;
+
+
+}
+
+.countries_grid div {
+	padding-left:20px;
+}
+
+</style>
+
+</head>
+<body>
+	<h1>All about DIV</h1><hr>
+	<!--div is a block element with br on top and bottom and used as container-->
+	Before a div <div style="border:3px dotted red; padding-left: 10px">Inside a div</div>After a div
+	<hr>
+	<!--style class id are attributes of div-->
+
+	<div style="width:300px; padding: 20px 0px 20px 20px; background-color: #FF8C00; font-family:Calibri; margin:auto;">
+	<h1>India</h1>
+	<p>India is rich in culture and heritage.<br>India is full of colors.<p>
+	</div><hr>
+
+	<div class="countries">
+	<div style="background-color:gold;" id="mycontainer">
+	<h1>Australia</h1>
+	<p>Australia is famous for kangaroos.<br>Australian players are great in 	cricket.<p>
+	</div>
+
+	<div style="background-color:hotpink;" id="mycontainer">
+	<h1>Oslo</h1>
+	<p>Oslo is the capital city of Norway.<br>
+	Oslo has over 600.000 inhabitants.<p>
+	</div>
+
+	<div style="background-color:grey;" id="mycontainer">
+	<h1>Rome</h1>
+	<p>Rome is the capital city of Italy.<br>
+	Rome has almost 3 million inhabitants.<p>
+	</div>
+	</div>
+
+	<hr>
+
+	<div class="countries_2">
+	<div style="background-color:gold;" id="mycontainer">
+	<h1>Australia</h1>
+	<p>Australia is famous for kangaroos.<br>Australian players are great in 	cricket.<p>
+	</div>
+
+	<div style="background-color:hotpink;" id="mycontainer">
+	<h1>Oslo</h1>
+	<p>Oslo is the capital city of Norway.<br>
+	Oslo has over 600.000 inhabitants.<p>
+	</div>
+
+	<div style="background-color:grey;" id="mycontainer">
+	<h1>Rome</h1>
+	<p>Rome is the capital city of Italy.<br>
+	Rome has almost 3 million inhabitants.<p>
+	</div>
+	</div>
+
+	<hr>
+
+
+	<div class="countries_grid">
+	<div style="background-color:gold;" id="mycontainer">
+	<h1>Australia</h1>
+	<p>Australia is famous for kangaroos.<br>Australian players are great in 	cricket.<p>
+	</div>
+
+	<div style="background-color:hotpink;" id="mycontainer">
+	<h1>Oslo</h1>
+	<p>Oslo is the capital city of Norway.<br>
+	Oslo has over 600.000 inhabitants.<p>
+	</div>
+
+	<div style="background-color:grey;" id="mycontainer">
+	<h1>Rome</h1>
+	<p>Rome is the capital city of Italy.<br>
+	Rome has almost 3 million inhabitants.<p>
+	</div>
+	</div>
+
+	<hr>
+
+	
+	
+	
+
+</body>
+
+
+</html>

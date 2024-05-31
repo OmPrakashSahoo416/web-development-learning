@@ -1,0 +1,24 @@
+h1 {
+    padding: 15px;
+    border:5px solid red;
+    margin: 50px;
+
+}
+
+div {
+    background-color: blanchedalmond;
+
+    /* set the width first  */
+    width: 300px;
+
+    /* now the width is specified we can set  */
+    /* div element to center by margin auto  */
+    /* it will automatically divide the remaininy width of  */
+    /* screen to half in left and right  */
+    margin: auto;
+    text-align: center;
+}
+
+p {
+    padding: 20px;
+}

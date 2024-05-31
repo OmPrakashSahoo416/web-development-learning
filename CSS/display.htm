@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="display.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<body>
+    <h1>Display</h1>
+    <p>Lets start </p><br>
+    <div class="container">
+        <div class="boxes">
+            <h3>display:none</h3>
+            <img src="wall.jpg" alt="wallpaper">
+            <a href="" onclick="">Remove</a>
+        </div>
+
+        <div class="boxes">
+            <h3>visibility:hidden</h3>
+            <img id="hidden" src="wall.jpg" alt="wallpaper">
+            <a href="" onclick="return func()">Hide</a>
+        </div>
+
+        <div class="boxes">
+            <h3>Resetting the view</h3>
+            <img src="wall.jpg" alt="wallpaper">
+            <input id="res" type="reset" value="Reset">
+        </div>
+
+    </div>
+
+    <script>
+        
+        function func() {
+            document.getElementById("hidden").style.display="none";
+        }
+
+    </script>
+</body>
+</html>

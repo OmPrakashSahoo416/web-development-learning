@@ -1,0 +1,11 @@
+p {
+    background-color: crimson;
+    color:white;
+    width: 400px;
+    height: 400px;
+
+    /* to keep element size fixed with changing with  */
+    /* and added padding  */
+    /* padding-top: auto;
+    box-sizing: border-box; */
+}

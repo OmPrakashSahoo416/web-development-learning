@@ -1,0 +1,66 @@
+#scroll {
+    height: 300px;
+    width: 400px;
+    overflow: scroll;
+    border: 2px solid black;
+}
+
+#hidden {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+#floating {
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid black;
+    width: 600px;
+    background-color:bisque;
+}
+
+#floating img {
+    border: 2px solid black;
+    margin-left: 10px;
+    height: 150px;
+    float: right;
+}
+#floating p {
+    margin-top: 0px;
+    text-align: justify;
+}
+
+#navbar {
+    position:fixed;
+    top: 10px;
+    left: 40%;
+    /* width: 500px; */
+    text-align: center;
+    border: 3px solid black;
+    background-color: tomato;
+    /* margin: auto; */
+}
+
+#navbar a{
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: Arial;
+    display: inline-block;
+    background-color: yellow;
+
+}
+
+#navbar a:hover{
+    border: 3px solid white;
+    background-color: black;
+    color: white;
+
+}
+#navbar a:active{
+    background-color: red;
+    color: white;
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+    <style>
+        button {
+            padding: 10px;
+            background-color: burlywood;
+            border: none;
+            font-family: poppins;
+        }
+        button:hover{
+            background-color: black;
+            color: burlywood;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>HTML Form Elements</h1><hr>
+    <p>Here i will be creating a list to learn different 
+        HTML form elements
+    </p><hr>
+    <form action="action_page.txt" target="_self" method="get" oninput="contact_details.value=name.value + ':'+phone.value">
+        <label for="book">Book Name:</label>
+        <input type="text" id="book" name="book"><hr>
+
+        <!-- we will be defining a drop down list here with pre-selected 
+        a single option at first -->
+        <label for="cars">Select your car:</label>
+        <select name="cars" id="cars" multiple>
+            <!-- can use ctrl/shift + select to select multiple values -->
+            <option value="maruti suzuki">Maruti Suzuki</option>
+            <!-- pre-defining tata selected at first  -->
+            <option value="tata" selected>Tata</option>
+            <option value="honda">Honda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="mahindra">Mahindra</option>
+        </select><hr>
+
+        <!-- text area to send a message or large text input  -->
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="50" rows="10">Message here...</textarea>
+
+        <hr>
+
+        <!-- button element to create a clickable button  -->
+        <button type="button" onclick="alert('Hello user. Namaste!')">
+        Welcome !
+        </button><hr>
+        <!-- using fieldset we can group different elements together  -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone">Phone No:</label><br>
+            <input type="text" id="phone" name="Phone">
+        </fieldset><hr>
+
+        <!-- output is used to show results of the values 
+        or calculations or anything in the web page 
+        according to the script defination -->
+
+        <output name="contact_details">
+            
+        </output>
+        <br><hr>
+        <input type="submit">
+        <!--http://127.0.0.1:5500/HTML/action_page.txt?book=Alchemist&
+            cars=tata&cars=honda&cars=hyundai&cars=mahindra&
+            message=Hi+wanna+do+a+collab%0D%0A%0D%0ARegards%0D%0ACheers
+            &name=Sam+Setia&Phone=982389232-->
+
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+#heading {
+    border: 2px solid black;
+    width: 300px;
+
+    /* to just center align the text horizontally  */
+    text-align: center;
+
+    /* to add same margins on both sides to center align  */
+    margin: auto;
+   
+} 
+
+img {
+    width: 400px;
+    background-color: tomato;
+    display: block;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#vertical_align {
+    width: 300px;
+    border: 2px solid black;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

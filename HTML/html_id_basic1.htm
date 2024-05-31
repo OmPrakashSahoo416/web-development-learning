@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML ID</title>
+
+<style>
+#start {
+color:white;
+background-color:grey;
+padding: 20px 20px 20px 20px;
+text-align:center;
+font-family:poppins;
+font-size:200%;
+text-decoration:underline overline;
+
+}
+
+
+</style>
+</head>
+<body>
+	<h1 id = "top">HTML ID</h1><hr>
+	<p id="start">START HERE</p>
+
+	<!--using id with bookmarks-->
+	<a href="#C4">Link to Chapter X </a>
+	
+	<p>just <br>adding<br> random <br>text <br>to<br> see <br> how<br> the<br> scroll would <br>work</p>
+<p>just <br>adding<br> random <br>text <br>to<br> see <br> how<br> the<br> scroll would <br>work</p>
+<p>just <br>adding<br> random <br>text <br>to<br> see <br> how<br> the<br> scroll would <br>work</p>
+<p>just <br>adding<br> random <br>text <br>to<br> see <br> how<br> the<br> scroll would <br>work</p>
+	<!--the link will search this and scroll the document here-->
+	<h2 id = "C4">Chapter</h2><hr>
+	<a href="#top">Reach Top </a><hr>
+	
+
+	<!--link to another page in the directory with a specific id-->
+	<a href="Classes_basic1.htm#idpagecall" target=_blank>Link to HTML Classes</a>
+
+
+	<!--manipulating text in another element using js-->
+	<script>
+	function displayRes() {
+		let htl = document.getElementById("C4").innerHTML;
+
+		if( htl=="Chapter"){
+			document.getElementById("C4").innerHTML = "Great";
+		}
+		else {
+			document.getElementById("C4").innerHTML = "Chapter";
+		}
+
+
+	}
+
+	</script>
+
+	<!--giving this inside a button and adding it in the onclick event--><hr>
+
+	<button onclick="displayRes()">Change element</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

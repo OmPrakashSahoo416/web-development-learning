@@ -1,0 +1,41 @@
+
+
+a {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    font-size: xx-large;
+}
+/* to find all the elements with a attribute specified  */
+
+/* the a tags with target specified will be affected  */
+a[target] {
+    color: green;
+    text-decoration: none;
+}
+
+/* if will specified attribute and value also  */
+a[target="_blank"] {
+    text-decoration: none;
+    font-size: xx-large;
+    color: red;
+}
+
+/* to find elements if their attribute contains a specific word  */
+/* [attribute~="word"] { ... } */
+
+/* to select elements with attribute with either the  */
+/* exact value or if the element is followed by "-" like top  */
+/* and top-like or top-same etc.... */
+/* attribute|="value" */
+
+/* if you have an attribute with the start letters  */
+ /* [attribute^="letters"]  letter-ad, letteradas, etc */
+
+ /* or vice versa at the end then [attr$="letters"] { ... } */
+
+
+ /* select elements if it contains "anythng" anywhere */
+ /* [ attr*="value"]  */
+
+ 

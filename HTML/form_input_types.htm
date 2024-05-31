@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form input types</title>
+</head>
+<body>
+    <h1>Form Input Types</h1><hr>
+    <form action="" target="_blank" method="get">
+
+        <!-- text is the default input type  -->
+        <label for="textie">Textie : </label>
+        <input type="text" value="_default_" name="textie" id="textie"><br><br>
+
+        <label for="passcode">Passcode : </label>
+        <input type="password" name="passcode" id="passcode"><br><br>
+
+        <!-- submitting form data to form handler -->
+        <input title="Press to submit" type="submit" name="sub" id="sub" value="SUB"><br><br>
+
+        <!-- reset button to reset all the input values  -->
+        <input type="reset" name="resett" id="resett" value="my_reset"><br><br>
+
+        <label for="rad1">rad1</label>
+        <input type="radio" name="rad" id="rad1">
+        <label for="rad2">rad2</label>
+        <input type="radio" name="rad" id="rad2">
+        <label for="rad3">rad3</label>
+        <input type="radio" name="rad" id="rad3"><br><br>
+
+        <!-- to choose multiple options use the checkbox  -->
+
+        <label for="v1">v1</label>
+        <input type="checkbox" name="v" id="v1">
+        <label for="v2">v2</label>
+        <input type="checkbox" name="v" id="v2">
+        <label for="v3">v3</label>
+        <input type="checkbox" name="v" id="v3">
+        <label for="v4">v4</label>
+        <input type="checkbox" value="v4" name="v" id="v4"><br><br>
+
+        <!-- to create a random button and adding function to it  -->
+        <input type="button" value="Touch and see" onclick="alert('Crazy!')">
+        <br><br>
+
+        <!-- to add a color picker -->
+        <label for="col">choose your col</label>
+        <input type="color" name="colorchoosen" id="col"><br><br>
+
+        <!-- to take input date or datetime-local for both  -->
+        <label for="dat">Put date : </label>
+        <input type="datetime-local" name="dat" id="dat"><br><br>
+
+        <!-- to input only a number  -->
+        <label for="num">Number Input</label>
+        <input type="number" name="randomNum" id="num" value="0"><br><br>
+
+        <!-- suppose i sent some data hidden and not visible to user  -->
+        <label for="hidden">Hidden</label>
+        <input type="hidden" name="hidden" value="atomic habits" id="hidden">
+        <br><br>
+
+        <!-- to use a image as a submit button to the form  -->
+        <input type="image" src="krishna.jpg" id="im"><br><br>
+
+        <!-- to take a file input  -->
+        <label for="fil">Input a file</label>
+        <input type="file" name="fil" id="fil"><br><br>
+
+        <!-- to take email as input and the browser will identify  -->
+        <label for="mail">Email</label>
+        <input type="email" name="mailid" id="mail"><br><br>
+
+        <!-- to take a month as a input  -->
+        <label for="mon">Month : </label>
+        <input type="month" name="Month" id="mon"><br><br>
+
+        <!-- search input behaves like a regular text field -->
+        <label for="searc">Search : </label>
+        <input type="search" name="searc" id="searc"><br><br>
+
+        <!-- to create a range or slider kind of thing  -->
+        <label for="rang">select a rang</label>
+        <input type="range" name="rang" min="0" max="50" step="5" id="rang">
+        <br><br>
+
+        <!-- only time or week-->
+        <label for="tim">Set Time : </label>
+        <input type="week" name="tim" id="tim">
+
+    </form>
+</body>
+</html>

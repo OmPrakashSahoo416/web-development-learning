@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Input Attributes </title>
+</head>
+<body>
+    <h1>Form Input Attributes</h1><hr>
+
+    <form action="">
+
+        <label for="name"></label>
+        <input type="text" value="first middle last" name="name" id="name"><br><br>
+    
+        <input type="text" readonly name="instr" id="instr" value="readonly"><br><br>
+    
+        <!-- disabled attribute unclickable and can not be sent in get or post  -->
+        <input type="text" name="dis" id="dis" disabled value="disabled"><br><br>
+    
+        
+        <input type="radio" size="500" id="rad" value="randomnly">
+        <label for="rad">Random</label><br><br>
+    
+        <label for="t"></label>
+        <input type="text" value="elongated" name="t" size="50" id="t"><br><br>
+    
+        <!-- multiple attribute is used to add multiple input in a single field  -->
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+    
+        <!-- if we want to give conditions to input field  -->
+        <label for="cc">Country code : </label>
+        <input type="text" placeholder="IND" name="cc" id="cc" size="3" pattern="[A-Z]{3}" title="Enter first 3 letters in capital for your country">
+        <br><br>
+        <!-- required attribute makes a field mandatory to be filled out  -->
+        <!-- step attribute used in range to step up th slider value when we move  -->
+
+
+        <!-- autofocus is used to highlight a field when the page is reloaded to first fill it  -->
+
+        <input type="text" name="focus" autofocus>
+        
+        <!-- predefined list to choose option from  -->
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br><br>
+        <br><br><hr>
+        <input type="reset" value="Refresh"><br><br>
+        <input type="submit" formtarget="_blank" name="sub" id="sub" value="Done">
+    </form>
+    
+
+    
+</body>
+</html>
