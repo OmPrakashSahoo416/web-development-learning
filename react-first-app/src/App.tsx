@@ -1,5 +1,7 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
+import ButtonClassic from "./components/ButtonClassic";
+import { useState } from "react";
 
 function App() {
 
@@ -11,10 +13,19 @@ function App() {
       console.log("You selected: " + item);
     }
 
+    const [alertVisible, SetAlertVisible] = useState(false);
+
+
+    
+
   return (
     <div>
       <ListGroup items={items} heading="Most Loved Countries" onSelectItem={handleonSelectItem} />
-      <Alert>Sorry you got in <span className="uppercase text-red-700 text-lg">"hell!"</span></Alert>
+      {/* <Alert>Sorry that was it from my side</Alert> */}
+
+
+      {alertVisible && <Alert onClick={() => SetAlertVisible(false)}>You clicked and I got your IP address</Alert>}
+      <ButtonClassic color="bg-purple-500" onClick={() => SetAlertVisible(true)}>Click Me!</ButtonClassic>
     </div>
   );
 }
