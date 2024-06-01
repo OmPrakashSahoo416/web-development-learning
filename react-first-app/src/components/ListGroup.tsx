@@ -10,9 +10,10 @@ import { useState } from "react";
 interface Props {
   items:string[];
   heading:string;
+  onSelectItem: (item:string) => void;
 }
 
-function ListGroup({items, heading} : Props) {
+function ListGroup({items, heading, onSelectItem} : Props) {
   // let selectedIndex = 0; this wont work because it is a local
   // variable and it does not change dynamically
   // to implement this we use something case state
@@ -38,6 +39,7 @@ function ListGroup({items, heading} : Props) {
         {items.map((item, index) => (
           // changing from list item to button
           // because tailwindcss supports focus in button on li tag
+          
           <button
             className={
               selectedIndex === index
@@ -47,6 +49,7 @@ function ListGroup({items, heading} : Props) {
             key={item}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
             }}
           >
             {item}
